@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/ShantanuParanjpe/springboot-CD.git
     targetRevision: HEAD
-    path: argocd-application        # folder ArgoCD watches
+    path: argocd-manifest-files        # folder ArgoCD watches
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app
