@@ -10,14 +10,11 @@ spec:
   type: LoadBalancer
   loadBalancerIP: 135.236.233.58
   selector:
-    app.kubernetes.io/component: kube-prometheus-stack-grafana
-    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/component: kube-prometheus-stack
+    app.kubernetes.io/name: grafana
   ports:
     - name: http
       port: 80
       protocol: TCP
-      targetPort: http
-    - name: https
-      port: 443
-      protocol: TCP
-      targetPort: https
+      targetPort: 3000
+  
