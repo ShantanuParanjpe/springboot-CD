@@ -9,3 +9,15 @@ metadata:
 spec:
   type: LoadBalancer
   loadBalancerIP: 135.236.233.58
+  selector:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/name: ingress-nginx
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: http
+    - name: https
+      port: 443
+      protocol: TCP
+      targetPort: https
