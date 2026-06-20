@@ -10,7 +10,7 @@ spec:
   type: LoadBalancer
   loadBalancerIP: 135.236.233.58
   selector:
-    app.kubernetes.io/component: kube-prometheus-stack
+    app.kubernetes.io/instance: kube-prometheus-stack
     app.kubernetes.io/name: grafana
   ports:
     - name: http
