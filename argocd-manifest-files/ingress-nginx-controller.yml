@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ingress-nginx-controller
-  namespace: ingress-basic
+  namespace: monitoring
   annotations:
     # Tells Azure to find the IP inside your infrastructure resource group
     service.beta.kubernetes.io/azure-load-balancer-resource-group: MC_raks_raks_northeurope
